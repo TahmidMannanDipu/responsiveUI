@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_design/home_page.dart';
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           radius: const Radius.circular(8),
         )
       ),
-      home: HomePage(),
+      home:const HomePage(),
     );
   }
 }

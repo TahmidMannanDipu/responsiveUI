@@ -4,7 +4,7 @@ import 'package:responsive_design/responsive/dimentions.dart';
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileBody;
   final Widget desktopBody;
-  ResponsiveLayout(
+  const ResponsiveLayout(
       {super.key, required this.mobileBody, required this.desktopBody});
 
   @override

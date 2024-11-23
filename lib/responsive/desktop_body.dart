@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_design/responsive/dimentions.dart';
 
 class MyDesktopBody extends StatelessWidget {
   const MyDesktopBody({super.key});
@@ -8,10 +7,6 @@ class MyDesktopBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        // Check if the screen width is wide enough for desktop view
-        bool isDesktop =
-            constraints.maxWidth > mobileWidth; // Adjust breakpoint as needed
-
         return Scaffold(
           backgroundColor: Colors.indigo[200],
           appBar: AppBar(
@@ -21,11 +16,11 @@ class MyDesktopBody extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            centerTitle: true,
             backgroundColor: Colors.indigo,
           ),
           body: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-
             children: [
               Expanded(
                 flex: 3,
@@ -54,15 +49,15 @@ class MyDesktopBody extends StatelessWidget {
                   ],
                 ),
               ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Container(
-                      color: Colors.indigo[400],
-                      width: 200,
-                    ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Container(
+                    color: Colors.indigo[400],
+                    width: 200,
                   ),
                 ),
+              ),
             ],
           ),
         );

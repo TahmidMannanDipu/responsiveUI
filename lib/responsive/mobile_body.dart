@@ -13,7 +13,9 @@ class MyMobileBody extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
           ),
+
         ),
+        centerTitle: true,
         backgroundColor: Colors.indigo,
       ),
       body: ListView(
